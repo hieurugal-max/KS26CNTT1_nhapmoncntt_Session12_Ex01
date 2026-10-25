@@ -1,0 +1,34 @@
+Phần 1. Phân tích
+
+- Record: Mỗi dòng là một giao dịch
+- Field: Các cột gồm mã giao dịch, mã người dùng, tên người dùng, số tiền giao dịch, phí ngân hàng và trạng thái giao dịch
+
+Phần 2. Triển khai
+
+1. Word – Tài liệu SRS
+
+- Tiêu đề: SRS – Tính năng hoàn tiền PayKX.
+- Heading 1: Giới thiệu, Mô tả tổng quan, Yêu cầu chức năng, Yêu cầu phi chức năng, Kiểm thử
+- Heading 2: Các mục nhỏ như Gửi yêu cầu hoàn tiền, Kiểm tra giao dịch, Phê duyệt và Hoàn tiền
+- Tạo mục lục tự động bằng References → Table of Contents
+- Điều chỉnh nội dung và ngắt trang để đủ 5 trang
+
+2. Excel – Đối soát giao dịch
+
+- Dùng TRIM để xóa khoảng trắng thừa: `=TRIM(B2)`
+- Dùng VLOOKUP để tra cứu chính xác tên người dùng: `=VLOOKUP(F2,$H$2:$I$4,2,FALSE)`
+- Không gộp ô và không để hàng trống giữa các bản ghi.
+
+3. PowerPoint – Báo cáo doanh thu
+
+- Slide 1: Doanh thu tăng 15% nhờ ưu đãi nạp điện thoại.
+- Slide 2: Phí ngân hàng ảnh hưởng đến lợi nhuận.
+- Slide 3: Thống kê tình hình hoàn tiền.
+- Dùng biểu đồ để thể hiện số liệu, font chữ tối thiểu 30pt. Số liệu 15% chỉ là ví dụ minh họa.
+
+Phần 3. Kiểm thử lỗi #N/A
+
+1. Kiểm tra mã tra cứu có tồn tại trong bảng hay không
+2. Dùng TRIM loại bỏ khoảng trắng thừa
+3. Kiểm tra vùng tra cứu, bảo đảm mã nằm ở cột đầu tiên
+4. Kiểm tra công thức VLOOKUP và tham số FALSE
